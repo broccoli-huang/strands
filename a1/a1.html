@@ -21,9 +21,6 @@
             <button id="02" class="button1" onclick="Click(0,2)"> </button>
             <button id="03" class="button1" onclick="Click(0,3)"> </button>
             <button id="04" class="button1" onclick="Click(0,4)"> </button>
-            <button id="05" class="button1" onclick="Click(0,5)"> </button>
-            <button id="06" class="button1" onclick="Click(0,6)"> </button>
-            <button id="07" class="button1" onclick="Click(0,7)"> </button>
         </div>
         <div>
             <button id="10" class="button1" onclick="Click(1,0)"> </button>
@@ -31,9 +28,6 @@
             <button id="12" class="button1" onclick="Click(1,2)"> </button>
             <button id="13" class="button1" onclick="Click(1,3)"> </button>
             <button id="14" class="button1" onclick="Click(1,4)"> </button>
-            <button id="15" class="button1" onclick="Click(1,5)"> </button>
-            <button id="16" class="button1" onclick="Click(1,6)"> </button>
-            <button id="17" class="button1" onclick="Click(1,7)"> </button>
         </div>
         <div>
             <button id="20" class="button1" onclick="Click(2,0)"> </button>
@@ -41,9 +35,6 @@
             <button id="22" class="button1" onclick="Click(2,2)"> </button>
             <button id="23" class="button1" onclick="Click(2,3)"> </button>
             <button id="24" class="button1" onclick="Click(2,4)"> </button>
-            <button id="25" class="button1" onclick="Click(2,5)"> </button>
-            <button id="26" class="button1" onclick="Click(2,6)"> </button>
-            <button id="27" class="button1" onclick="Click(2,7)"> </button>
         </div>
         <div>
             <button id="30" class="button1" onclick="Click(3,0)"> </button>
@@ -51,9 +42,6 @@
             <button id="32" class="button1" onclick="Click(3,2)"> </button>
             <button id="33" class="button1" onclick="Click(3,3)"> </button>
             <button id="34" class="button1" onclick="Click(3,4)"> </button>
-            <button id="35" class="button1" onclick="Click(3,5)"> </button>
-            <button id="36" class="button1" onclick="Click(3,6)"> </button>
-            <button id="37" class="button1" onclick="Click(3,7)"> </button>
         </div>
         <div>
             <button id="40" class="button1" onclick="Click(4,0)"> </button>
@@ -61,9 +49,6 @@
             <button id="42" class="button1" onclick="Click(4,2)"> </button>
             <button id="43" class="button1" onclick="Click(4,3)"> </button>
             <button id="44" class="button1" onclick="Click(4,4)"> </button>
-            <button id="45" class="button1" onclick="Click(4,5)"> </button>
-            <button id="46" class="button1" onclick="Click(4,6)"> </button>
-            <button id="47" class="button1" onclick="Click(4,7)"> </button>
         </div>
         <div>
             <button id="50" class="button1" onclick="Click(5,0)"> </button>
@@ -71,9 +56,6 @@
             <button id="52" class="button1" onclick="Click(5,2)"> </button>
             <button id="53" class="button1" onclick="Click(5,3)"> </button>
             <button id="54" class="button1" onclick="Click(5,4)"> </button>
-            <button id="55" class="button1" onclick="Click(5,5)"> </button>
-            <button id="56" class="button1" onclick="Click(5,6)"> </button>
-            <button id="57" class="button1" onclick="Click(5,7)"> </button>
         </div>
         <div>
             <button id="60" class="button1" onclick="Click(6,0)"> </button>
@@ -81,9 +63,6 @@
             <button id="62" class="button1" onclick="Click(6,2)"> </button>
             <button id="63" class="button1" onclick="Click(6,3)"> </button>
             <button id="64" class="button1" onclick="Click(6,4)"> </button>
-            <button id="65" class="button1" onclick="Click(6,5)"> </button>
-            <button id="66" class="button1" onclick="Click(6,6)"> </button>
-            <button id="67" class="button1" onclick="Click(6,7)"> </button>
         </div>
         <div>
             <button id="70" class="button1" onclick="Click(7,0)"> </button>
@@ -91,33 +70,29 @@
             <button id="72" class="button1" onclick="Click(7,2)"> </button>
             <button id="73" class="button1" onclick="Click(7,3)"> </button>
             <button id="74" class="button1" onclick="Click(7,4)"> </button>
-            <button id="75" class="button1" onclick="Click(7,5)"> </button>
-            <button id="76" class="button1" onclick="Click(7,6)"> </button>
-            <button id="77" class="button1" onclick="Click(7,7)"> </button>
+        </div>
+        <div>
+            <button id="80" class="button1" onclick="Click(8,0)"> </button>
+            <button id="81" class="button1" onclick="Click(8,1)"> </button>
+            <button id="82" class="button1" onclick="Click(8,2)"> </button>
+            <button id="83" class="button1" onclick="Click(8,3)"> </button>
+            <button id="84" class="button1" onclick="Click(8,4)"> </button>
         </div>
 	</section>
 
     
     <script>
         // settings
-        var num_of_row = 8;
-        var num_of_col = 8;
-        var title = "Guess what?";
+        var num_of_row = 9;
+        var num_of_col = 5;
+        var title = "Cough cough";
         var strands_no = 1;
-        var table = 'EBUORSUYLURDFOUOBGRGEOBSAOLORPOSCIBOUSATOCUWSNONRBIAUDLTOBSWWERE';
-        var ans = [
-            ['30','21','22','33','44','35','25','14','04','15','26','36','47','37'],  // spangram the first
-            ['72','63','62','71','70'],
-            ['61','60','50','51','40','31','32','41'],
-            ['73','64','53','52','42','43','54','45'],
-            ['20','11','12','23','24','34'],
-            ['13','03','02','01','10','00'],
-            ['46','55','65','76','75','74'],
-            ['07','17','06','05','16','27'],
-            ['77','66','67','56','57']
+        var table = 'NEUONPMCIOONOSIMAONSIRTUARCILCOPCOLSOSIVCILCO';
+        var ans = [ 
+            ['10','00','01','02','11','20','21','32','43','53','42','41','31','30','40','51','50','60','70','80','71','61','52','62','72','81','82','73','83','84','74','63','64','54','44','33','22','12','03','04','13','14','23','24','34']  // spangram the first
         ]  
-        var correct_color = ['#EC5E42','#FBC2E2', '#FBE8C2','#F6F29C','#C9F69C','#76BBF4','#76F2F4','#E8BDFE','#A57675'];
-        var result_balls = ['💥','🩷','🧡','💛','💚','💙','🩵','💜','🤎'];
+        var correct_color = ['#EC5E42','#FBC2E2', '#FBE8C2','#F6F29C','#C9F69C','#76BBF4','#76F2F4','#E8BDFE','#A57675']; 
+        var result_balls = ['🗣🗣🗣🗣🗣🗣🗣']; //['💥','🩷','🧡','💛','💚','💙','🩵','💜','🤎']; 
     </script>
 
     <script>
@@ -135,7 +110,7 @@
         var col_prev = 0;
         var used_reg = [];
         var correct_arr = [];
-        var result = "PPM's Strands #" + strands_no.toString() + '\n\"' + title + '\"\n';
+        var result = "AC's Strands #" + strands_no.toString() + '\n\"' + title + '\"\n';
 		function Click(row, col) { 
             if (!used_reg.includes(row.toString()+col.toString())) {
                 if (str_reg == '' || ((Math.abs(row-row_prev)<=1) && (Math.abs(col-col_prev)<=1) && !(id_reg.includes(row.toString()+col.toString())))) {
@@ -179,7 +154,7 @@
             return ;
 		}
         function Hint() {
-            for (var i=1;i<ans.length;i++) {
+            for (var i=0;i<ans.length;i++) { // for (var i=1;i<ans.length;i++) {
                 if (!correct_arr.includes(i)) {
                     for (var j=0;j<ans[i].length;j++) {
                         document.getElementById(ans[i][j]).style.borderColor = 'black';

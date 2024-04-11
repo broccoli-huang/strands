@@ -86,6 +86,7 @@
         var num_of_row = 7;
         var num_of_col = 7;
         var title = "From time to time";
+        var strands_no = 2;
         var table = 'NMARANOOIVLZTHIABAEZPTOSBIUSHTKIXENRIHSNIEANDGLFT';
         var ans = [
             ['40','31','22','33','34','45','36'],  // spangram the first
@@ -115,7 +116,7 @@
         var col_prev = 0;
         var used_reg = [];
         var correct_arr = [];
-        var result = "PPM's Strands: " + title + '\n';
+        var result = "PPM's Strands #" + strands_no.toString() + '\n\"' + title + '\"\n';
 		function Click(row, col) { 
             if (!used_reg.includes(row.toString()+col.toString())) {
                 if (str_reg == '' || ((Math.abs(row-row_prev)<=1) && (Math.abs(col-col_prev)<=1) && !(id_reg.includes(row.toString()+col.toString())))) {

@@ -103,6 +103,7 @@
         var num_of_row = 8;
         var num_of_col = 8;
         var title = "GO GO GO!";
+        var strands_no = 3;
         var table = 'NPIHSPLAXOTATRTFIAIERMOSETNONITTKLIPSOYAIEPANNWABYIRUNNUUOPTRLET';
         var ans = [
             ['73','63','53','54','44','43','33','24','14','13','12','22','11','00'],  // spangram the first
@@ -134,7 +135,7 @@
         var col_prev = 0;
         var used_reg = [];
         var correct_arr = [];
-        var result = "PPM's Strands: " + title + '\n';
+        var result = "PPM's Strands #" + strands_no.toString() + '\n\"' + title + '\"\n';
 		function Click(row, col) { 
             if (!used_reg.includes(row.toString()+col.toString())) {
                 if (str_reg == '' || ((Math.abs(row-row_prev)<=1) && (Math.abs(col-col_prev)<=1) && !(id_reg.includes(row.toString()+col.toString())))) {
