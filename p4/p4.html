@@ -117,6 +117,7 @@
                 document.getElementById(row.toString()+col.toString()).innerHTML = table[num_of_col*row+col];	
             }
         }
+        var start_time = Date.now();
     </script>
 
 	<script>
@@ -155,6 +156,9 @@
                     document.getElementById("showbar").innerHTML = '';	
                     if (correct_arr.length == ans.length) {
                         document.getElementById("showbar").innerHTML = "Well done! Results copied to clipboard. ";
+                        var end_time = Date.now();
+                        var spend_time = Math.floor((end_time - start_time)/1000);
+                        result += '\nSolved in ' + Math.floor(spend_time/3600).toString().padStart(2, '0') + ':' + Math.floor((spend_time%3600)/60).toString().padStart(2, '0') + ':' + (spend_time%60).toString().padStart(2, '0');
                         navigator.clipboard.writeText(result);
                     }
                     return ;
