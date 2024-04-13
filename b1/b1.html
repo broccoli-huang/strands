@@ -23,6 +23,7 @@
             <button id="04" class="button1" onclick="Click(0,4)"> </button>
             <button id="05" class="button1" onclick="Click(0,5)"> </button>
             <button id="06" class="button1" onclick="Click(0,6)"> </button>
+            <button id="07" class="button1" onclick="Click(0,7)"> </button>
         </div>
         <div>
             <button id="10" class="button1" onclick="Click(1,0)"> </button>
@@ -32,6 +33,7 @@
             <button id="14" class="button1" onclick="Click(1,4)"> </button>
             <button id="15" class="button1" onclick="Click(1,5)"> </button>
             <button id="16" class="button1" onclick="Click(1,6)"> </button>
+            <button id="17" class="button1" onclick="Click(1,7)"> </button>
         </div>
         <div>
             <button id="20" class="button1" onclick="Click(2,0)"> </button>
@@ -41,6 +43,7 @@
             <button id="24" class="button1" onclick="Click(2,4)"> </button>
             <button id="25" class="button1" onclick="Click(2,5)"> </button>
             <button id="26" class="button1" onclick="Click(2,6)"> </button>
+            <button id="27" class="button1" onclick="Click(2,7)"> </button>
         </div>
         <div>
             <button id="30" class="button1" onclick="Click(3,0)"> </button>
@@ -50,6 +53,7 @@
             <button id="34" class="button1" onclick="Click(3,4)"> </button>
             <button id="35" class="button1" onclick="Click(3,5)"> </button>
             <button id="36" class="button1" onclick="Click(3,6)"> </button>
+            <button id="37" class="button1" onclick="Click(3,7)"> </button>
         </div>
         <div>
             <button id="40" class="button1" onclick="Click(4,0)"> </button>
@@ -59,6 +63,7 @@
             <button id="44" class="button1" onclick="Click(4,4)"> </button>
             <button id="45" class="button1" onclick="Click(4,5)"> </button>
             <button id="46" class="button1" onclick="Click(4,6)"> </button>
+            <button id="47" class="button1" onclick="Click(4,7)"> </button>
         </div>
         <div>
             <button id="50" class="button1" onclick="Click(5,0)"> </button>
@@ -68,6 +73,7 @@
             <button id="54" class="button1" onclick="Click(5,4)"> </button>
             <button id="55" class="button1" onclick="Click(5,5)"> </button>
             <button id="56" class="button1" onclick="Click(5,6)"> </button>
+            <button id="57" class="button1" onclick="Click(5,7)"> </button>
         </div>
         <div>
             <button id="60" class="button1" onclick="Click(6,0)"> </button>
@@ -77,6 +83,7 @@
             <button id="64" class="button1" onclick="Click(6,4)"> </button>
             <button id="65" class="button1" onclick="Click(6,5)"> </button>
             <button id="66" class="button1" onclick="Click(6,6)"> </button>
+            <button id="67" class="button1" onclick="Click(6,7)"> </button>
         </div>
         <div>
             <button id="70" class="button1" onclick="Click(7,0)"> </button>
@@ -86,6 +93,7 @@
             <button id="74" class="button1" onclick="Click(7,4)"> </button>
             <button id="75" class="button1" onclick="Click(7,5)"> </button>
             <button id="76" class="button1" onclick="Click(7,6)"> </button>
+            <button id="77" class="button1" onclick="Click(7,7)"> </button>
         </div>
 	</section>
 
@@ -93,18 +101,20 @@
     <script>
         // settings
         var num_of_row = 8;
-        var num_of_col = 7;
-        var title = "1-0 games";
+        var num_of_col = 8;
+        var title = "Who is it?";
         var strands_no = 1;
-        var table = 'SGSREHTNOAREORBSBDTSBAEEALSMOPILSRSILORBEWRESEGREATESNAR';
+        var table = 'DEKSPIHSSLLOSURIMUQSPOAEIHOPTCIGRAMTEEIAWIAEREPTEMCDJSBOCRTESUSA';
         var ans = [
-            ['20','30','21','32','22','33','43','34','24','14','25','36','46'],  // spangram the first
-            ['26','16','15','06','05','04','03','02'],
-            ['41','50','60','70','71','72','73'],
-            ['76','75','74','64','63','53','44'],
-            ['54','65','66','56','55','45','35'],
-            ['23','13','12','01','11','10','00'],
-            ['40','31','42','52','51','61','62']
+            ['74','75','65','56','46','35','36','25','15','14'],  // spangram the first
+            ['70','71','60','50','61','52','43','44'],
+            ['51','42','33','32','23','34','45','54'],
+            ['55','64','53','62','72','73','63'],
+            ['76','77','66','67','57','47','37','27'],
+            ['03','02','01','11','00'],
+            ['20','30','40','41','31','22'],
+            ['24','13','12','21','10'],
+            ['26','17','16','07','06','05','04']
         ]  
         var correct_color = ['#EC5E42','#FBC2E2', '#FBE8C2','#F6F29C','#C9F69C','#76BBF4','#76F2F4','#E8BDFE','#A57675'];
         var result_balls = ['💥','🩷','🧡','💛','💚','💙','🩵','💜','🤎'];
@@ -126,7 +136,7 @@
         var col_prev = 0;
         var used_reg = [];
         var correct_arr = [];
-        var result = "Juliet's Strands #" + strands_no.toString() + '\n\"' + title + '\"\n';
+        var result = "Burger's Strands #" + strands_no.toString() + '\n\"' + title + '\"\n';
 		function Click(row, col) { 
             if (!used_reg.includes(row.toString()+col.toString())) {
                 if (str_reg == '' || ((Math.abs(row-row_prev)<=1) && (Math.abs(col-col_prev)<=1) && !(id_reg.includes(row.toString()+col.toString())))) {
